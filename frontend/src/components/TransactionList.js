@@ -8,7 +8,7 @@ function TransactionList({ refresh }) {
 
   const fetchTransactions = async () => {
     try {
-      const res = await axios.get("http://127.0.0.1:8000/transactions");
+      const res = await axios.get("https://splitsmart-upi.onrender.com/transactions");
       setTransactions(res.data);
     } catch {
       setTransactions([]);

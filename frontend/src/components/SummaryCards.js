@@ -6,7 +6,7 @@ function SummaryCards({ refresh }) {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/transactions")
+      .get("https://splitsmart-upi.onrender.com/transactions")
       .then((res) => setTransactions(res.data))
       .catch(() => setTransactions([]));
   }, [refresh]);

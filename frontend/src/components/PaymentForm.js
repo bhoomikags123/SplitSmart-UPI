@@ -24,7 +24,7 @@ function PaymentForm({ amountFromReceipt, setRefresh }) {
     }
 
     try {
-      const res = await axios.post("http://127.0.0.1:8000/payment", {
+      const res = await axios.post("https://splitsmart-upi.onrender.com/payment", {
         sender,
         receiver,
         receiver_upi: receiverUpi,
